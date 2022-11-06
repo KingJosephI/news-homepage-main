@@ -65,6 +65,29 @@ div:has(> .hero__readmore-button) {
   padding: 1rem 2rem;
 }
 
+.new {
+  background-color: rgb(0, 0, 26);
+  color: rgb(255, 253, 250);
+  padding: 1.6666666667rem;
+}
+.new__title {
+  color: rgb(233, 171, 83);
+  font-size: 2rem;
+  padding-bottom: 1.3333333333rem;
+}
+.new__item:not(:last-of-type) {
+  padding-bottom: 1.3333333333rem;
+  border-bottom: 0.0666666667rem solid rgb(93, 95, 121);
+}
+.new__item h3 {
+  padding-top: 1.3333333333rem;
+}
+.new__item p {
+  color: rgb(93, 95, 121);
+  padding-top: 0.6666666667rem;
+  line-height: 1.3333333333rem;
+}
+
 body {
   padding: 2rem;
 }/*# sourceMappingURL=main.css.map */

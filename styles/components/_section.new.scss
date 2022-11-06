@@ -1,0 +1,30 @@
+@use '../abstracts/' as *;
+
+.new {
+  background-color: $very-dark-blue;
+  color: $off-white;
+  padding: rem(25);
+
+  &__title {
+    color: $soft-orange;
+    font-size: rem(30);
+    padding-bottom: rem(20);
+  }
+
+  &__item {
+    &:not(:last-of-type) {
+      padding-bottom: rem(20);
+      border-bottom: rem(1) solid $dark-grayish-blue;
+    }
+
+    h3 {
+      padding-top: rem(20);
+    }
+
+    p {
+      color: $dark-grayish-blue;
+      padding-top: rem(10);
+      line-height: rem(20);
+    }
+  }
+}
