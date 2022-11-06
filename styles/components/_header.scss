@@ -1,1 +1,26 @@
 @use '../abstracts/' as *;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // background-color: yellow;
+
+  nav {
+    display: none;
+  }
+
+  &__nav {
+    display: flex;
+    gap: rem(15);
+
+    &__link {
+      color: $dark-grayish-blue;
+    }
+  }
+
+  &__hamburger {
+    border: none;
+    background-color: transparent;
+  }
+}

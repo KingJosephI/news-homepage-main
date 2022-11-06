@@ -16,22 +16,36 @@
     <title>Frontend Mentor | News homepage</title>
   </head>
   <body>
-    <header>
-      <div><img src="./assets/images/logo.svg" alt="" /></div>
+    <header class="header">
+      <div class="header__logo">
+        <img src="./assets/images/logo.svg" alt="" />
+      </div>
+      <button class="header__hamburger">
+        <img src="./assets/images/icon-menu.svg" alt="" />
+      </button>
       <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">New</a></li>
-          <li><a href="#">Popular</a></li>
-          <li><a href="#">Trending</a></li>
-          <li><a href="#">Categories</a></li>
+        <ul class="header__nav">
+          <li class="header__nav__item">
+            <a href="#" class="header__nav__link">Home</a>
+          </li>
+          <li class="header__nav__item">
+            <a href="#" class="header__nav__link">New</a>
+          </li>
+          <li class="header__nav__item">
+            <a href="#" class="header__nav__link">Popular</a>
+          </li>
+          <li class="header__nav__item">
+            <a href="#" class="header__nav__link">Trending</a>
+          </li>
+          <li class="header__nav__item">
+            <a href="#" class="header__nav__link">Categories</a>
+          </li>
         </ul>
       </nav>
-      <div><img src="./assets/images/icon-menu.svg" alt="" /></div>
     </header>
 
-    <section>
-      <div>
+    <section class="hero">
+      <div class="hero__illustration">
         <picture>
           <source
             srcset="./assets/images/image-web-3-desktop.jpg"
@@ -40,31 +54,33 @@
           <img src="./assets/images/image-web-3-mobile.jpg" alt="" />
         </picture>
       </div>
-      <div>
-        <h1>The Bright Future of Web 3.0?</h1>
-        <p>
+      <div class="hero__content">
+        <h1 class="hero__title">The Bright Future of Web 3.0?</h1>
+        <p class="hero__description">
           We dive into the next evolution of the web that claims to put the
           power of the platforms back into the hands of the people. But is it
           really fulfilling its promise?
-          <a href="#">Read more</a>
+          <div>
+            <a href="#" class="hero__readmore-button">Read more</a>
+          </div>
         </p>
       </div>
     </section>
 
-    <section>
-      <h2>New</h2>
-      <div>
+    <section class="new">
+      <h2 class="new__title">New</h2>
+      <div class="new__item">
         <h3>Hydrogen VS Electric Cars</h3>
         <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
       </div>
-      <div>
+      <div class="new__item">
         <h3>The Downsides of AI Artistry</h3>
         <p>
           What are the possible adverse effects of on-demand AI image
           generation?
         </p>
       </div>
-      <div>
+      <div class="new__item">
         <h3>Is VC Funding Drying Up?</h3>
         <p>
           Private funding by VC firms is down 50% YOY. We take a look at what
