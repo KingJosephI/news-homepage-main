@@ -1,0 +1,6 @@
+@use './abstracts/' as *;
+@use './components/' as *;
+
+body {
+  padding: rem(1);
+}
