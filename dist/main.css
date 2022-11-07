@@ -14,6 +14,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  width: 100%;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -39,9 +43,6 @@ a {
           padding-block-start: 1.3333333333rem;
   -webkit-padding-after: 3.3333333333rem;
           padding-block-end: 3.3333333333rem;
-}
-.hero__illustration img {
-  width: 100%;
 }
 .hero__title {
   font-size: 2.6666666667rem;
@@ -88,6 +89,34 @@ div:has(> .hero__readmore-button) {
   line-height: 1.3333333333rem;
 }
 
+.features {
+  padding-block: 3.3333333333rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.features__illustration {
+  min-width: 6.6666666667rem;
+  width: 6.6666666667rem;
+}
+.features__item {
+  display: flex;
+  gap: 1.3333333333rem;
+}
+.features__number {
+  font-size: 2rem;
+  color: rgb(197, 198, 206);
+  font-weight: 700;
+}
+.features__title {
+  color: rgb(0, 0, 26);
+  font-size: 1.3333333333rem;
+  padding-block: 0.6666666667rem;
+}
+.features__paragraph {
+  color: rgb(93, 95, 121);
+  line-height: 1.4666666667rem;
+}
 body {
   padding: 2rem;
 }/*# sourceMappingURL=main.css.map */
