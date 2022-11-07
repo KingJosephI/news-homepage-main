@@ -1,9 +1,15 @@
+@use './functions' as *;
+
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  padding: rem(30);
 }
 
 ul {

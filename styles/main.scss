@@ -1,6 +1,3 @@
 @use './abstracts/' as *;
 @use './components/' as *;
-
-body {
-  padding: rem(30);
-}
+@use './layouts/' as *;

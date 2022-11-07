@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+body {
+  padding: 2rem;
+}
+
 ul {
   list-style: none;
 }
@@ -116,7 +120,4 @@ div:has(> .hero__readmore-button) {
 .features__paragraph {
   color: rgb(93, 95, 121);
   line-height: 1.4666666667rem;
-}
-body {
-  padding: 2rem;
 }/*# sourceMappingURL=main.css.map */
