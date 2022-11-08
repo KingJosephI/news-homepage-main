@@ -19,6 +19,7 @@
   div:has(> &__readmore-button) {
     margin-top: rem(30);
   }
+
   &__readmore-button {
     text-transform: uppercase;
     background-color: $soft-red;
@@ -26,5 +27,9 @@
     font-weight: 700;
     letter-spacing: rem(5);
     padding: rem(15) rem(30);
+
+    &:hover {
+      background-color: $very-dark-blue;
+    }
   }
 }

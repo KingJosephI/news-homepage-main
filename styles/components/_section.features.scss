@@ -26,6 +26,11 @@
     color: $very-dark-blue;
     font-size: rem(20);
     padding-block: rem(10);
+
+    &:hover {
+      cursor: pointer;
+      color: $soft-red;
+    }
   }
 
   &__paragraph {

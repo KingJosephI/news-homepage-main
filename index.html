@@ -3,16 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
     <link rel="stylesheet" href="./dist/main.css" />
+    <script defer src="./js/main.js"></script>
     <title>Frontend Mentor | News homepage</title>
   </head>
   <body>
@@ -20,25 +18,30 @@
       <div class="header__logo">
         <img src="./assets/images/logo.svg" alt="" />
       </div>
-      <button class="header__hamburger">
-        <img src="./assets/images/icon-menu.svg" alt="" />
+      <button
+        class="header__hamburger mobile-nav-toggle"
+        aria-controls="header__menu"
+        aria-expanded="false"
+      >
+        <!-- <img src="./assets/images/icon-menu.svg" alt="" /> -->
+        <span class="sr-only">Menu</span>
       </button>
       <nav>
-        <ul class="header__nav">
-          <li class="header__nav__item">
-            <a href="#" class="header__nav__link">Home</a>
+        <ul class="header__menu" data-visible="false">
+          <li class="header__menu__item">
+            <a href="#" class="header__menu__link">Home</a>
           </li>
-          <li class="header__nav__item">
-            <a href="#" class="header__nav__link">New</a>
+          <li class="header__menu__item">
+            <a href="#" class="header__menu__link">New</a>
           </li>
-          <li class="header__nav__item">
-            <a href="#" class="header__nav__link">Popular</a>
+          <li class="header__menu__item">
+            <a href="#" class="header__menu__link">Popular</a>
           </li>
-          <li class="header__nav__item">
-            <a href="#" class="header__nav__link">Trending</a>
+          <li class="header__menu__item">
+            <a href="#" class="header__menu__link">Trending</a>
           </li>
-          <li class="header__nav__item">
-            <a href="#" class="header__nav__link">Categories</a>
+          <li class="header__menu__item">
+            <a href="#" class="header__menu__link">Categories</a>
           </li>
         </ul>
       </nav>
