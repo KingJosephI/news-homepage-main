@@ -70,7 +70,3 @@
     border: 0;
   }
 }
-
-body:has(header__hamburger[aria-expanded='true']) {
-  backdrop-filter: blur(1rem);
-}

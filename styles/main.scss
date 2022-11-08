@@ -1,3 +1,7 @@
 @use './abstracts/' as *;
 @use './components/' as *;
 @use './layouts/' as *;
+
+p {
+  font-size: rem(14);
+}

@@ -1,6 +1,9 @@
 @use '../abstracts/' as *;
 
 @media screen and (min-width: rem(900)) {
+  body {
+    padding: rem(30) rem(165);
+  }
   .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -25,15 +28,15 @@
 
     &__content {
       display: flex;
-      gap: rem(80);
+      gap: rem(60);
 
-      & > * {
-        width: 50%;
+      & > *:last-of-type {
+        width: 70%;
       }
     }
 
     &__title {
-      font-size: rem(50);
+      font-size: rem(40);
     }
 
     &__description {
@@ -54,8 +57,7 @@
       }
 
       p {
-        padding-right: rem(50);
-        line-height: rem(25);
+        line-height: rem(20);
       }
     }
   }
@@ -66,6 +68,23 @@
     flex-direction: row;
     padding-block-start: rem(10);
     padding-block-end: 0;
-    gap: rem(20);
+    gap: rem(10);
+
+    &__item {
+      gap: rem(10);
+    }
+
+    &__title {
+      font-size: rem(16);
+    }
+
+    &__illustration {
+      min-width: rem(100);
+      width: rem(100);
+    }
+
+    &__paragraph {
+      font-size: rem(14);
+    }
   }
 }
